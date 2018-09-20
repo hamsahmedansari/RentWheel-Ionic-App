@@ -1,0 +1,51 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="bg-style">
+  <ion-card class="color_transparent border_none box_shadow_none" style="position: relative" text-center>
+    <img src="./assets/Images/Logo.png" style="width:60%;margin:auto" />
+
+    <ion-list class="login-list">
+
+      <ion-item class="color_transparent">
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="color_transparent ">
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item class="color_transparent ">
+        <span float-right font class="Custom_Secondry" style="font-weight: lighter" (click)="OpenForgetPage()">Forget Password</span>
+      </ion-item>
+
+    </ion-list>
+
+    <button ion-button full block margin-top  color="Custom_Secondry" (click)="OpenMainHomePage()" >Login</button>
+    <br>
+    <hr>
+    <br>
+    <button ion-button icon-left full block margin-top style="background-color: #3C5A99;font-weight: lighter"  (click)="OpenMainHomePage()">
+      <ion-icon name="logo-facebook"></ion-icon> &nbsp;&nbsp;&nbsp; Log in with Facebook
+    </button>
+    <button ion-button icon-left full block margin-top style="background-color: #DD4B38;font-weight: lighter"  (click)="OpenMainHomePage()">
+      <ion-icon name="logo-googleplus"></ion-icon> &nbsp;&nbsp;&nbsp; Log in with Google Plus
+    </button>
+
+    
+  </ion-card>
+  <div style="position: absolute; bottom: 2em; width: 100%;left:0px;">
+      <div style="text-align: center">
+        <p (click)="OpenSignUp()">No account yet ? Create one</p>
+      </div>
+    </div>
+</ion-content>
+

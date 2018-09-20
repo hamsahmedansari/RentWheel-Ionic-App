@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Setting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card class="color_transparent border_none box_shadow_none" text-center>
+
+    <div style="width:160px;height:160px;margin:auto;border-radius: 100%;position: relative;overflow: hidden;">
+    <img src="./assets/Images/UserProfileDefault.png" style="width:160px;height:160px;margin:auto" />
+    <p style="position:  absolute;background-color: rgba(0,0,0,0.5);bottom:  0;width:  100%;color:  #fff;padding: 00.5em;">
+      Change
+    </p>
+    </div>
+    
+    <ion-list class="setting-list">
+
+      <ion-item class=" ">
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item class=" ">
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item class="">
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class=" ">
+        <ion-label floating>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class=" ">
+        <ion-label floating>Contact No</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item class=" ">
+        <ion-label>City</ion-label>
+        <ion-select [(ngModel)]="City">
+          <ion-option value="Karachi">Karachi</ion-option>
+          <ion-option value="Lahore">Lahore</ion-option>
+          <ion-option value="Islamabad">Islamabad</ion-option>
+          <ion-option value="Faisalabad">Faisalabad</ion-option>
+          <ion-option value="Peshawar">Peshawar</ion-option>
+          <ion-option value="Multan">Multan </ion-option>
+          <ion-option value="Rawalpindi">Rawalpindi </ion-option>
+          <ion-option value="Hyderabad">Hyderabad </ion-option>
+          <ion-option value="Gujranwala">Gujranwala </ion-option>
+          <ion-option value="Rahim Yar Khan">Rahim Yar Khan</ion-option>
+        </ion-select>
+      </ion-item>
+
+
+    </ion-list>
+
+    <button ion-button color="Custom_Primary" style="color:#fff" margin-top round>Update</button>
+
+
+  </ion-card>
+
+</ion-content>

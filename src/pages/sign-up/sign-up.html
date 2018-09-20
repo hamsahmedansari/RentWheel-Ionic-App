@@ -1,0 +1,69 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="bg-style">
+  <ion-card class="color_transparent border_none box_shadow_none" style="position: relative" text-center>
+    <img src="./assets/Images/Logo.png" style="width:60%;margin:auto" />
+
+    <ion-list class="login-list">
+
+
+      <ion-item class="color_transparent ">
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item class="color_transparent ">
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item class="color_transparent">
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="color_transparent ">
+        <ion-label floating>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="color_transparent ">
+        <ion-label floating>Contact No</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item class="color_transparent ">
+        <ion-label>City</ion-label>
+        <ion-select [(ngModel)]="City">
+          <ion-option value="Karachi">Karachi</ion-option>
+          <ion-option value="Lahore">Lahore</ion-option>
+          <ion-option value="Islamabad">Islamabad</ion-option>
+          <ion-option value="Faisalabad">Faisalabad</ion-option>
+          <ion-option value="Peshawar">Peshawar</ion-option>
+          <ion-option value="Multan">Multan </ion-option>
+          <ion-option value="Rawalpindi">Rawalpindi </ion-option>
+          <ion-option value="Hyderabad">Hyderabad </ion-option>
+          <ion-option value="Gujranwala">Gujranwala </ion-option>
+          <ion-option value="Rahim Yar Khan">Rahim Yar Khan</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <div text-center  margin-top>
+      <p style="color:#fff" >By clicking JOIN NOW you accept our <br> 
+          <a href="">Term and condition </a></p>
+    </div>
+<br>
+    <button ion-button full block margin-top style="background-color: #9E780B;" (click)="OpenPinVerification()">Join Now</button>
+
+    <div text-center margin-top navPop>
+      <p style="color:#fff">Already have an account? <span style="color:#000"> Login Now</span> </p>
+    </div>
+
+  </ion-card>
+</ion-content>

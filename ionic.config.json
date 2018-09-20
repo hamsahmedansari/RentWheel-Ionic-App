@@ -1,0 +1,7 @@
+{
+  "name": "RentWheels",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
