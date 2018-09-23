@@ -15,6 +15,7 @@ import { HistoryPage } from '../pages/history/history';
 import { InviteFriendsPage } from '../pages/invite-friends/invite-friends';
 import { AboutPage } from '../pages/about/about';
 
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -53,6 +54,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

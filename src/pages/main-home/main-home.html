@@ -2,15 +2,53 @@
 
     <ion-navbar>
         <button class="danger" left-menu ion-button icon menuToggle>
-            <ion-icon name="menu"></ion-icon>        
+            <ion-icon name="menu"></ion-icon>
         </button>
-    <ion-title> <img src="./assets/Images/Logo.png" alt="" style="width: 9em;margin: auto"> </ion-title>
+        <ion-title> <img src="./assets/Images/Logo.png" alt="" style="width: 9em;margin: auto"> </ion-title>
     </ion-navbar>
-  
-  </ion-header>
+
+</ion-header>
 
 
-<ion-content padding>
-  
+<ion-content>
+
+    <ion-card no-padding no-margin class='slider'>
+
+
+        <ion-slides effect="coverflow" autoplay="3000" loop pager paginationType="progress">
+
+            <ion-slide *ngFor="let number of ['S1','S2','S3','S4','S5']">
+                <img src="./assets/imgs/{{number}}.jpg" style="width: 100%" alt="">
+            </ion-slide>
+
+        </ion-slides>
+
+
+    </ion-card>
+
+    <div *ngFor="let item of [1,2,3]">
+        <div class="custom-submenu">
+            <h4 no-margin padding float-left>Package {{item}} </h4>
+            <button ion-button round float-right margin margin-right color="dark">Check <ion-badge color="dark"
+                    item-end>260+</ion-badge>
+            </button>
+        </div>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6 *ngFor="let item of [1,2]">
+                    <ion-card text-center padding>
+                        <img src="./assets/imgs/car1.jpg" alt="">
+                        <ion-card-content>
+                            <ion-card-title>
+                                Car 1
+                            </ion-card-title>
+                            <button ion-button round no-margin color="dark">Book Now</button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 
 </ion-content>
